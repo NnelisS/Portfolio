@@ -1,0 +1,48 @@
+body {
+	background-color: #333;
+}
+  
+.navbar {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #222;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+  }
+  
+  .logo img {
+	height: 40px; /* Change this to the height of your logo */
+	border-radius: 25px;
+  }
+  
+  .nav-buttons {
+	display: flex;
+	align-items:flex-start;
+	margin: 0;
+	padding: 0;
+	padding-right: 0%;
+  }
+  
+  .nav-btn {
+	background-color: #555;
+	border: none;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 10px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-btn:last-child {
+	margin-right: 10;
+  }
+  
+  .nav-btn:hover {
+	background-color: #ff0000;
+  }
