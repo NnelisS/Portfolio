@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(function(){
-      $("#navbar").load("/Portfolio/Navbar/navbar.html");
-    });
-  </script>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="/Portfolio/homepagestyle.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$("#navbar").load("/Portfolio/Navbar/navbar.html");
+		});
+	</script>
 </head>
 <body>
-  <div id="navbar"></div>
+	<div id="navbar"></div>
+	<div id="main">
+		<div id="left-column">
+			<h2>Videos</h2>
+			<div class="video">
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/9NrTCwsaEm0?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<a class="button" href="#">Go to page</a>
+			</div>
+			<div class="video">
+				<iframe width="640" height="360" src="https://www.youtube.com/embed/Kss4foj9o2U?autoplay=1&start=30" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<a class="button" href="#">Go to page</a>
+			</div>
+		</div>
+		<div id="right-column">
+			<h2>Buttons</h2>
+			<div class="button-with-image">
+				<img src="https://via.placeholder.com/150" alt="Button with image">
+				<p>Button text</p>
+			</div>
+			<div class="button-with-image">
+				<img src="https://via.placeholder.com/150" alt="Button with image">
+				<p>Button text</p>
+			</div>
+			<div class="button-with-image">
+				<img src="https://via.placeholder.com/150" alt="Button with image">
+				<p>Button text</p>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particlesapp.js"></script>
 </body>
 </html>

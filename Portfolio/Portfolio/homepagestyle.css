@@ -1,0 +1,93 @@
+#main {
+	display: flex;
+	margin: 50px;
+}
+
+#left-column {
+	width: 60%;
+	padding-right: 30px;
+}
+
+#left-column h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+#left-column .video {
+	margin-bottom: 30px;
+}
+
+#left-column iframe {
+	border: 10px solid #ccc;
+	border-radius: 5px;
+}
+
+.button {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	transition: background-color 0.1s ease;
+}
+
+.button:hover {
+	background-color: #718499;
+}
+
+#right-column {
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#right-column h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.button-with-image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.button-with-image img {
+	border-radius: 5px;
+}
+
+.button-with-image p {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+.button-with-image:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.button-with-image:hover:before {
+	opacity: 1;
+}
+
+.button-with-image:hover p {
+	color: #fff;
+}
+
+.button-with-image:hover img {
+	transform: scale(1.1);
+}
