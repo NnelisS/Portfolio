@@ -171,11 +171,11 @@ span:nth-child(1) {
   @keyframes fade-in {
     30%{
         color: white;
-        border-radius: 100%;
+        border-radius: 80%;
         background-color: rgb(255, 255, 255);
     }
     50%{
-        background: rgba(255, 255, 255, 0.286);
+        background: rgba(255, 255, 255, 0.126);
     }
     100% {
       opacity: 1;
