@@ -228,9 +228,13 @@ body{
 	padding-right: 30px;
 }
 
-#left-column h2 {
+#left-column h1 {
 	font-size: 24px;
+    font-family: Rockwell, "Courier New", Courier, Georgia,
+                 Times, "Times New Roman", serif;
 	margin-bottom: 20px;
+    margin-left: -100px;
+    color: #007bff;
 }
 
 #left-column .video {
