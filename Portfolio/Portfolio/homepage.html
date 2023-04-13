@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Website</title>
-	<link rel="stylesheet" type="text/css" href="/Portfolio/homepagestyle.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
-		$(function(){
-			$("#navbar").load("/Portfolio/Navbar/navbar.html");
-		});
-	</script>
-</head>
-<section>
-	<h1>
-		<span>Welcome</span>
-		<span>to</span>
-		<span>my</span>
-		<span>Developer</span>
-		<span>Portfolio</span>
-		<span>have</span>
-		<span>a</span>
-		<span>look</span>
-		<span>around</span>
-		<span>and</span>
-		<span>i</span>
-		<span>hope</span>
-		<span>you</span>
-		<span>like</span>
-		<span>what</span>
-		<span>you</span>
-		<span>see</span>
-		<span>...</span>
-	  </h1>
-	<div class='air air1'></div>
-	<div class='air air2'></div>
-	<div class='air air3'></div>
-	<div class='air air4'></div>
-  </section>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="/Portfolio/homepagestyle.css">
+    <script type="text/javascript" src="/Portfolio/homepagemove.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function(){
+        $("#navbar").load("/Portfolio/Navbar/navbar.html");
+      });
+      
+      $(document).ready(function() {
+        $("#arrow").click(function() {
+          $('html, body').animate({
+            scrollTop: $(document).height() - $(window).height()
+          }, 1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <section>
+      <h1>
+        <span>Welcome</span>
+        <span>to</span>
+        <span>my</span>
+        <span>Developer</span>
+        <span>Portfolio</span>
+        <span>have</span>
+        <span>a</span>
+        <span>look</span>
+        <span>around</span>
+        <span>and</span>
+        <span>i</span>
+        <span>hope</span>
+        <span>you</span>
+        <span>like</span>
+        <span>what</span>
+        <span>you</span>
+        <span>see</span>
+        <span>...</span>
+      </h1>
+      <div class='air air1'></div>
+      <div class='air air2'></div>
+      <div class='air air3'></div>
+      <div class='air air4'></div>
+	  <button id="arrow" class="arrow-down">
+		<img src="https://cdn4.iconfinder.com/data/icons/defaulticon/icons/png/256x256/arrow-alt-down.png" alt="Arrow" />
+		 </section>
 <body>
 	<div id="navbar"></div>
 	<div id="main">
